@@ -20,7 +20,8 @@
     max-width: 80rem;
     margin: auto;
     padding: 1.5rem 0;
-    font-family: 'Inter', sans-serif;
+    font-family: monospace;
+    font-size: 1.0rem;
     font-weight: 300;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: white;

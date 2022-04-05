@@ -1,0 +1,72 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgb(0, 0, 0, 0.6);
+}
+
+.modal-container-inner {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.modal-projects-container {
+    display: flex;
+    background: #FFF;
+    flex-direction: column;
+    text-align: center;
+    align-items: middle;
+    position: relative;
+    width: 30rem;
+    height: 50rem;
+    box-shadow: rgba(0, 0, 0, 0.445) 0px 8px 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.modal-project-image {
+    height: 25rem;
+    width: 30rem;
+}
+
+.modal-project-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+.modal-project-description {
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 1rem;
+    max-height: 10rem;
+    margin: 0.5rem 1rem;
+    overflow: hidden;
+}
+
+.modal-button-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+}
+
+.modal-project-button {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: 2px solid #FCA311;
+    cursor: pointer;
+}
+
+.modal-project-button:hover {
+    background-color: #FCA311;
+    color: #FFF;
+}

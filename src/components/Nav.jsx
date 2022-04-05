@@ -32,8 +32,7 @@ const Nav = () => {
             </div>
             {!viewDropDown && 
                 <nav className="nav-links">
-                    <a className='nav-link' href="/">Home</a>
-                    <a className='nav-link' href="https://github.com/Scott-fo">GitHub</a>
+                    <Link className='nav-link' to="/">Home</Link>
                     <Link className='nav-link' to="/Projects">Projects</Link>
                     <Link className='nav-link' to="/Contact">Contact</Link>
                 </nav>
@@ -42,8 +41,7 @@ const Nav = () => {
         </div>
             {viewDropDown && 
                 <nav className="dropdown-links">
-                    <a className='dropdown-link' href="/">Home</a>
-                    <a className='dropdown-link' href="https://github.com/Scott-fo">GitHub</a>
+                    <Link className='dropdown-link' to="/">Home</Link>
                     <Link className='dropdown-link' to="/Projects">Projects</Link>
                     <Link className='dropdown-link' to="/Contact">Contact</Link>
                 </nav>

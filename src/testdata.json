@@ -1,0 +1,20 @@
+[
+    {
+        "title" : "Sample 1",
+        "image" : "https://images.unsplash.com/photo-1649125445721-d50a8ef83d76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+        "summary" : "Sample 1 Summary",
+        "description" : "Sample 1 Description"
+    },
+    {
+        "title" : "Sample 2",
+        "image" : "https://images.unsplash.com/photo-1649134830207-6cf5f8b49e85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "summary" : "Sample 2 Summary",
+        "description" : "Sample 2 Description"
+    },
+    {
+        "title" : "Sample 3",
+        "image" : "https://images.unsplash.com/photo-1649122769909-d83a7d45f9c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+        "summary" : "Sample 3 Summary",
+        "description" : "Sample 3 Description"
+    }
+]
