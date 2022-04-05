@@ -47,12 +47,12 @@
     background-color: white;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
-    border: 2px solid #FCA311;
+    border: 2px solid #00acee;
     cursor: pointer;
 }
 
 .project-button:hover {
-    background-color: #FCA311;
+    background-color: #00acee;
     color: #FFF;
 }
 

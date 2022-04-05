@@ -8,7 +8,7 @@
 }
 
 .name {
-    color: #FCA311;
+    color: #00acee;
 }
 
 .header-container {
@@ -21,8 +21,8 @@
     margin: auto;
     padding: 1.5rem 0;
     font-family: monospace;
-    font-size: 1.0rem;
-    font-weight: 300;
+    font-size: 1.1rem;
+    /* font-weight: 400; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: white;
     padding-left: 2vw;
@@ -47,7 +47,7 @@
 
 .dropdown-button:hover {
     transform: rotate(90deg);
-    color: #FCA311;
+    color: #00acee;
 }
 
 .dropdown-link {
@@ -64,7 +64,7 @@
 }
 
 .dropdown-link:hover {
-    color: #FCA311;
+    color: #00acee;
 }
 
 
@@ -84,6 +84,6 @@
     }
 
     .nav-link:hover {
-        color: #FCA311;
+        color: #00acee;
     }
 }

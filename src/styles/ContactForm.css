@@ -25,11 +25,11 @@
 }
 
 .contact-input:hover {
-    border: solid 2px #FCA311;
+    border: solid 2px #00acee;
 }
 
 .contact-input:focus {
-    border: solid 2px #FCA311;
+    border: solid 2px #00acee;
     outline: none;
 }
 
@@ -40,13 +40,13 @@
 }
 
 #contact-submit-button:hover {
-    background-color: #FCA311;
-    border: solid 2px #FCA311;
+    background-color: #00acee;
+    border: solid 2px #00acee;
     color: #FFF;
 }
 
 #contact-submit-button:active {
-    background-color: #FCA311;
-    border: solid 2px #FCA311;
+    background-color: #00acee;
+    border: solid 2px #00acee;
     color: #FFF;
 }
