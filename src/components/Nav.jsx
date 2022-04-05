@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../styles/Nav.css";
 import { FaBars } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const [ viewDropDown, setViewDropDown ] = useState(false);
@@ -31,20 +32,20 @@ const Nav = () => {
             </div>
             {!viewDropDown && 
                 <nav className="nav-links">
-                    <p>Home</p>
-                    <p>GitHub</p>
-                    <p>Projects</p>
-                    <p>Contact</p>
+                    <a className='nav-link' href="/">Home</a>
+                    <a className='nav-link' href="https://github.com/Scott-fo">GitHub</a>
+                    <Link className='nav-link' to="/Projects">Projects</Link>
+                    <Link className='nav-link' to="/Contact">Contact</Link>
                 </nav>
             }
             <FaBars className='dropdown-button' onClick={handleClick}/>
         </div>
             {viewDropDown && 
                 <nav className="dropdown-links">
-                    <p>Home</p>
-                    <p>GitHub</p>
-                    <p>Projects</p>
-                    <p>Contact</p>
+                    <a className='dropdown-link' href="/">Home</a>
+                    <a className='dropdown-link' href="https://github.com/Scott-fo">GitHub</a>
+                    <Link className='dropdown-link' to="/Projects">Projects</Link>
+                    <Link className='dropdown-link' to="/Contact">Contact</Link>
                 </nav>
             }
     </header>

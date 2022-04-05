@@ -1,0 +1,141 @@
+.about-container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vh 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    /* background-color: #14213D;
+    color: #FCA311; */
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+.about-intro {
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.about-job-title {
+    margin-bottom: 0.75rem;
+}
+
+.about-section-image {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+}
+
+.about-section-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    width: 60%;
+}
+
+.headshot {
+    border-radius: 20px;
+    
+}
+
+.social-icon-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.social-icon {
+    cursor: pointer;
+}
+
+#github {
+    color: black;
+}
+
+#twitter {
+    color: #00acee;
+}
+
+#linkedin {
+    color: #0e76a8;
+}
+
+#mail {
+    color: black;
+}
+
+.about-name {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 0.15rem solid #00acee;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+        typing 2.5s steps(12, end),
+        blink-caret 0.75s step-end infinite;
+}
+
+.colour-about-name {
+    color: #00acee;
+}
+
+.about-job-title {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 500;
+    color: #00acee;
+    text-transform: uppercase;
+    margin-top: 1vh;
+}
+
+@media (min-width: 640px) {
+    .about-container {
+        flex-direction: unset;
+        justify-content: center;
+    }
+
+    .social-icon-container {
+        margin: 1rem 4vw;
+        font-size: 1.5rem;
+    }
+
+    .about-section-description {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1400px) {
+    .about-intro {
+        font-size: 1vw;
+    }
+
+    .about-name {
+        font-size: 3vw;
+    }
+
+    .about-job-title {
+        font-size: 1vw;
+    }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 12ch }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #00acee }
+}

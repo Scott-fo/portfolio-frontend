@@ -1,0 +1,118 @@
+.skills-section-wrapper {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    /* text-align: left; */
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-title {
+    font-size: 18px;
+    margin-bottom: 1vh;
+}
+
+.skill-category {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 200;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.skill {
+    margin: 2px 20px;
+    font-size: 25px;
+}
+
+.skills-list-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.skill-plus-text {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.skills-left-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.skills-right-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#javascript {
+    color: #F0DB4F;
+    background-color: black;
+}
+
+#html {
+    color: #F06529;
+}
+
+#css {
+    color: #264DE4;
+}
+
+#react {
+    color: #61DBFB;
+}
+
+#tailwind {
+    color: #38BDF8;
+}
+
+#redux {
+    color: #764ABC;
+}
+
+#git {
+    color: #F1502F;
+}
+
+#docker {
+    color: #0DB7ED;
+}
+
+#node {
+    color: #3C873A;
+}
+
+#mongodb {
+    color: #3FAD37;
+}
+
+#typescript {
+    color: #3178C6;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#arduino {
+    color: #3186a0;
+}
+
+@media (min-width: 1400px) {
+    .skills-title {
+        font-size: 1.2vw;
+    }
+
+    .skill-category {
+        font-size: 1vw;
+    }
+}
+
+@media (min-width: 850px) {
+    .skills-section-wrapper {
+        flex-direction: unset;
+        justify-content: center;
+    }
+}
