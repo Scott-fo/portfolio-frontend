@@ -14,7 +14,7 @@ const ProjectsSection = () => {
   };
 
   useEffect(() => {
-    console.log("Get selected project use effect")
+    // console.log("Get selected project use effect")
   }, [selectedProject])
 
   const getProjects = async () => {
@@ -27,29 +27,41 @@ const ProjectsSection = () => {
 
   useEffect(() => {
     getProjects();
-    console.log("Get projects use effect")
+    // console.log("Get projects use effect")
   }, [])
 
   const projects = data?.map((project) => {
-    return (
-        <div className='projects-container' id ={project.title} key={project.title} onClick={(e) => handleClick(e)}>
-            <img id ={project.title} src={project.image} alt="" className='project-image'/>
-            <div className="projects-content" id ={project.title} >
-                <h2 className='project-title' id ={project.title}>{project.title}</h2>
-                <h2 className='project-summary' id ={project.title}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias omnis numquam, fuga libero vitae repudiandae quos assumenda laborum velit, hic nobis ratione nam est! Excepturi sit totam officia numquam dolores!</h2>
-                <div className="button-container" id ={project.title}>
-                    <button className='project-button'>View Site</button>
-                    <button className='project-button'>View Code</button>
-                </div>
-            </div>
-        </div>
-    );
+    if(project.image) {
+      return (
+          <div className='projects-container' id ={project.title} key={project.title} onClick={(e) => handleClick(e)}>
+              <img id ={project.title} src={project.image} alt="" className='project-image'/>
+              <div className="projects-content" id ={project.title} >
+                  <h2 className='project-title' id ={project.title}>{project.title}</h2>
+                  <h2 className='project-summary' id ={project.title}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias omnis numquam, fuga libero vitae repudiandae quos assumenda laborum velit, hic nobis ratione nam est! Excepturi sit totam officia numquam dolores!</h2>
+                  <div className="button-container" id ={project.title}>
+                      <button className='project-button'>View Site</button>
+                      <button className='project-button'>View Code</button>
+                  </div>
+              </div>
+          </div>
+      );
+    } else {
+      return null
+    }
   })
 
   return (
-    <div className='rendered-projects'>
+    <div>
+      {!projects && 
+        <div className='loader-wrapper'>
+          <div className='loader'></div>
+        </div>
+      }
+
+      <div className='rendered-projects'>
         {projects}
         {showModal && <Modal showModal={showModal} setShowModal={setShowModal} selectedProject={selectedProject} />}
+      </div>
     </div>
   )
 }
