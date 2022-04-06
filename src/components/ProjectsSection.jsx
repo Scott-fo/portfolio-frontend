@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import axios from "axios";
 import "../styles/ProjectsSection.css";
-import data from "../testdata.json"
 import Modal from './Modal';
 
 const ProjectsSection = () => {
   const [ showModal, setShowModal ] = useState(false);
   const [ selectedProject, setSelectedProject ] = useState(null);
+  const [ data, setData ] = useState(null);
 
   const handleClick = (e) => {
     setShowModal(true);
@@ -13,10 +14,23 @@ const ProjectsSection = () => {
   };
 
   useEffect(() => {
-    // console.log(selectedProject)
+    console.log("Get selected project use effect")
   }, [selectedProject])
 
-  const projects = data.map((project) => {
+  const getProjects = async () => {
+    try {
+      await axios.get("http://localhost:8000/projects").then((response) => setData(response.data));
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  useEffect(() => {
+    getProjects();
+    console.log("Get projects use effect")
+  }, [])
+
+  const projects = data?.map((project) => {
     return (
         <div className='projects-container' id ={project.title} key={project.title} onClick={(e) => handleClick(e)}>
             <img id ={project.title} src={project.image} alt="" className='project-image'/>
@@ -31,6 +45,7 @@ const ProjectsSection = () => {
         </div>
     );
   })
+
   return (
     <div className='rendered-projects'>
         {projects}
