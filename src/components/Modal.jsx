@@ -8,11 +8,13 @@ const Modal = ({ setShowModal, showModal, selectedProject}) => {
                     <div className='modal-projects-container'>
                         <img src={selectedProject[0].image} alt="" className='modal-project-image'/>
                         <div className="modal-projects-content">
-                            <h2 className='modal-project-title'>{selectedProject[0]?.title}</h2>
-                            <h2 className='modal-project-description'>{selectedProject[0]?.description}</h2>
+                            <h2 className='modal-project-title'>{selectedProject[0].title}</h2>
+                            <div className='modal-description-wrapper'>
+                                <h2 className='modal-project-description'>{selectedProject[0].description}</h2>
+                            </div>
                             <div className="modal-button-container">
-                                <button className='modal-project-button'>View Site</button>
-                                <button className='modal-project-button'>View Code</button>
+                                {selectedProject[0].active_link && <a href={selectedProject[0].active_link}><button className='project-button' id='project-button'>View Site</button></a>}
+                                <a href={selectedProject[0].source_code}><button className='project-button' id='project-button'>View Code</button></a>
                             </div>
                         </div>
                     </div>

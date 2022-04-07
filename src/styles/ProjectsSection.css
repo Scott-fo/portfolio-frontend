@@ -4,20 +4,27 @@
     text-align: center;
     align-items: middle;
     position: relative;
-    width: 20rem;
-    height: 600px;
+    width: 320px;
+    height: 400px;
+    /* 600px */
     box-shadow: rgba(0, 0, 0, 0.445) 0px 8px 24px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .project-image {
-    height: 360px;
-    width: 20rem;
+    height: 150px;
+    /* 360px */
+    width: 320px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
 }
 
-
+.project-image:hover {
+    transform: scale(110%);
+}
 
 .project-title {
     display: flex;

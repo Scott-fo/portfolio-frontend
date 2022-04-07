@@ -6,6 +6,7 @@
     height: 100%;
     z-index: 2;
     background: rgb(0, 0, 0, 0.6);
+    overflow-y: scroll;
 }
 
 .modal-container-inner {
@@ -22,7 +23,7 @@
     text-align: center;
     align-items: middle;
     position: relative;
-    width: 30rem;
+    width: 80vw;
     height: 50rem;
     box-shadow: rgba(0, 0, 0, 0.445) 0px 8px 24px;
     font-family: 'Inter', sans-serif;
@@ -30,8 +31,8 @@
 }
 
 .modal-project-image {
-    height: 25rem;
-    width: 30rem;
+    height: 20rem;
+    width: 80vw;
 }
 
 .modal-project-title {
@@ -39,6 +40,13 @@
     justify-content: center;
     margin-top: 2rem;
     font-weight: 500;
+}
+
+.modal-description-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15rem;
 }
 
 .modal-project-description {
@@ -69,4 +77,14 @@
 .modal-project-button:hover {
     background-color: #00acee;
     color: #FFF;
+}
+
+@media (min-width: 680px) {
+    .modal-projects-container {
+        width: 40rem;
+    }
+
+    .modal-project-image {
+        width: 40rem;
+    }
 }

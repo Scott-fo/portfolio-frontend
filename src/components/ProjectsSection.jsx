@@ -9,8 +9,10 @@ const ProjectsSection = () => {
   const [ data, setData ] = useState(null);
 
   const handleClick = (e) => {
-    setShowModal(true);
-    setSelectedProject(data.filter((project) => project.title === e.target.id));
+    if (e.target.id !== "project-button") {
+      setShowModal(true);
+      setSelectedProject(data.filter((project) => project.title === e.target.id));
+    }
   };
 
   useEffect(() => {
@@ -35,12 +37,12 @@ const ProjectsSection = () => {
       return (
           <div className='projects-container' id ={project.title} key={project.title} onClick={(e) => handleClick(e)}>
               <img id ={project.title} src={project.image} alt="" className='project-image'/>
-              <div className="projects-content" id ={project.title} >
+              <div className="projects-content" id ={project.title}>
                   <h2 className='project-title' id ={project.title}>{project.title}</h2>
-                  <h2 className='project-summary' id ={project.title}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias omnis numquam, fuga libero vitae repudiandae quos assumenda laborum velit, hic nobis ratione nam est! Excepturi sit totam officia numquam dolores!</h2>
+                  <h2 className='project-summary' id ={project.title}>{project.summary}</h2>
                   <div className="button-container" id ={project.title}>
-                      <button className='project-button'>View Site</button>
-                      <button className='project-button'>View Code</button>
+                      {project.active_link && <a href={project.active_link}><button className='project-button' id='project-button'>View Site</button></a>}
+                      <a href={project.source_code}><button className='project-button' id='project-button'>View Code</button></a>
                   </div>
               </div>
           </div>
