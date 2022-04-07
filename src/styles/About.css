@@ -32,12 +32,13 @@
     margin-right: auto;
     margin-left: auto;
     width: 30%;
+
+
     min-width: 180px;
     min-height: 180px;
     max-width: 384px;
     max-height: 384px;
-    /* flex: 0 0 auto; */
-    flex-shrink: 0;
+    flex: 0 0 auto;
 }
 
 .about-section-description {
@@ -48,8 +49,9 @@
     margin-left: auto;
     margin-top: 2rem;
     width: 60%;
-    min-height: 350px;
-    flex-shrink: 0;
+    min-width: auto;
+
+    flex: 0 0 auto;
 }
 
 .headshot {
