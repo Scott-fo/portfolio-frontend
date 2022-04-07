@@ -56,7 +56,10 @@
 
 .headshot {
     border-radius: 20px;
-    
+    min-width: 180px;
+    min-height: 180px;
+    max-width: 384px;
+    max-height: 384px;
 }
 
 .social-icon-container {
