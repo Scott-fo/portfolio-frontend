@@ -26,7 +26,7 @@ const ContactForm = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/submitform", { ...formData })
+      await axios.post("https://scottfo-portfolio.herokuapp.com/submitform", { ...formData })
         .then((response) => {
           setFormSubmissionResponse(response.data);
           setFormData({

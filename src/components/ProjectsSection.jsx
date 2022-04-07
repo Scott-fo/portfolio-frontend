@@ -21,7 +21,7 @@ const ProjectsSection = () => {
 
   const getProjects = async () => {
     try {
-      await axios.get("http://localhost:8000/projects").then((response) => setData(response.data));
+      await axios.get("https://scottfo-portfolio.herokuapp.com/projects").then((response) => setData(response.data));
     } catch (err) {
       console.log(err);
     }
