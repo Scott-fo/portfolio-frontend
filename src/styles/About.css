@@ -36,6 +36,7 @@
     min-height: 180px;
     max-width: 384px;
     max-height: 384px;
+    flex: 0 0 auto;
 }
 
 .about-section-description {
