@@ -32,6 +32,10 @@
     margin-right: auto;
     margin-left: auto;
     width: 30%;
+    min-width: 180px;
+    min-height: 180px;
+    max-width: 384px;
+    max-height: 384px;
 }
 
 .about-section-description {
@@ -120,6 +124,10 @@
 
     .about-section-description {
         justify-content: center;
+    }
+
+    .about-section-image {
+        margin-bottom: 30px;
     }
 }
 
