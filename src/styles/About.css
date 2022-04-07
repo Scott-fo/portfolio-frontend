@@ -36,7 +36,8 @@
     min-height: 180px;
     max-width: 384px;
     max-height: 384px;
-    flex: 0 0 auto;
+    /* flex: 0 0 auto; */
+    flex-shrink: 0;
 }
 
 .about-section-description {
@@ -115,7 +116,7 @@
 @media (min-width: 640px) {
     .about-container {
         flex-direction: unset;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .social-icon-container {
