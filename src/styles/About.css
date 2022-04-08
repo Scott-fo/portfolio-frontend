@@ -33,12 +33,14 @@
     margin-left: auto;
     width: 30%;
 
-
     min-width: 180px;
     min-height: 180px;
-    max-width: 384px;
-    max-height: 384px;
-    flex: 0 0 auto;
+    max-width: 330px;
+    max-height: 330px;
+    
+    /* max-width: 384px;
+    max-height: 384px; */
+    /* flex: 0 0 auto; */
 }
 
 .about-section-description {
@@ -49,17 +51,17 @@
     margin-left: auto;
     margin-top: 2rem;
     width: 60%;
-    min-width: auto;
 
-    flex: 0 0 auto;
+    /* min-width: auto;
+    flex: 0 0 auto; */
 }
 
 .headshot {
     border-radius: 20px;
-    min-width: 180px;
-    min-height: 180px;
-    max-width: 384px;
-    max-height: 384px;
+    max-width: 180px;
+    max-height: 180px;
+    /* max-width: 384px;
+    max-height: 322px; */
 }
 
 .social-icon-container {
@@ -137,6 +139,11 @@
 
     .about-section-image {
         margin-bottom: 30px;
+    }
+
+    .headshot {
+        max-width: 330px;
+        max-height: 322px;
     }
 }
 
